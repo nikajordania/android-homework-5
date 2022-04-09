@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Homework 5</string>
+    <string name="run_distance">Run Distance</string>
+    <string name="swim_distance">Swimming Distance</string>
+    <string name="calories_taken">Calories Taken</string>
+    <string name="save">Save</string>
+</resources>
