@@ -3,5 +3,9 @@
     <string name="run_distance">Run Distance</string>
     <string name="swim_distance">Swimming Distance</string>
     <string name="calories_taken">Calories Taken</string>
+    <string name="run_avg">Run Distance Avg: </string>
+    <string name="swim_avg">Swimming Distance Avg: </string>
+    <string name="calories_taken_avg">Calories Taken Avg: </string>
+    <string name="run_distance_sum">Run Distance Sum: </string>
     <string name="save">Save</string>
 </resources>

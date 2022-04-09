@@ -19,25 +19,31 @@
             android:id="@+id/run_distance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="false"
             android:hint="@string/run_distance"
             android:inputType="number"
-            android:autofillHints="false" />
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
 
         <EditText
             android:id="@+id/swim_distance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="false"
             android:hint="@string/swim_distance"
             android:inputType="number"
-            android:autofillHints="false" />
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
 
         <EditText
             android:id="@+id/calories_taken"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="false"
             android:hint="@string/calories_taken"
             android:inputType="number"
-            android:autofillHints="false" />
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
 
         <Button
             android:id="@+id/save_button"
@@ -49,36 +55,75 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
         android:orientation="vertical"
+        android:stretchColumns="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputs">
 
-        <TextView
-            android:id="@+id/run_distance_avg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="32sp" />
+        <TableRow>
 
-        <TextView
-            android:id="@+id/swim_distance_avg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="32sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/run_avg"
+                android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/calories_taken_avg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="32sp" />
-        <TextView
-            android:id="@+id/run_distance_sum"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="32sp" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/run_distance_avg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/swim_avg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/swim_distance_avg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calories_taken_avg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/calories_taken_avg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/run_distance_sum"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/run_distance_sum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
